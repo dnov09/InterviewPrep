@@ -14,8 +14,6 @@ return [0, 1].
 nums, target = [2, 7, 11, 15, 45, 56, 12, 13, 14, 67, 78, 34, 35],  78
 
 # brtue force solution (O(n^2)) -> too slow
-
-
 def two_sums(nums, target):
     lst = list()
     for i in range(len(nums)):
