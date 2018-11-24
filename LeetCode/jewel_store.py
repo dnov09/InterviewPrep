@@ -19,12 +19,6 @@ Note:
     The characters in J are distinct.
 '''
 
-
-
-# if the jewel_chars in store_chars:
-    # add up the values of the existing chars in stores dict
-# return int
-
 #%%
 # store char_count in 2 different hashmaps
 # check how many times the character occurs.
@@ -33,13 +27,13 @@ def jewel_store(J, s):
     store = dict()
     count = 0
 
-    for i in range(len(J)):
+    for i in range(len(J)): # O(N)
         if J[i] in jewel:
             jewel[J[i]] += 1
         else:
             jewel[J[i]] = 1
     
-    for j in range(len(s)):
+    for j in range(len(s)): # O(N)
         if s[j] in store:
             store[s[j]] += 1
         else:
@@ -48,7 +42,7 @@ def jewel_store(J, s):
     # if the jewel_chars in store_chars:
         # add up the values of the existing chars in stores dict
     # return int
-    for key in store:
+    for key in store: # O(N)
         if key in jewel:
             count += store[key]
     return count
