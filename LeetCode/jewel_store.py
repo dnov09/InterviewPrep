@@ -20,13 +20,14 @@ Note:
 '''
 
 
-# store char_count in 2 different hashmaps
-# check how many times the character occurs.
+
 # if the jewel_chars in store_chars:
     # add up the values of the existing chars in stores dict
 # return int
 
 #%%
+# store char_count in 2 different hashmaps
+# check how many times the character occurs.
 def jewel_store(J, s):
     jewel = dict()
     store = dict()
@@ -44,12 +45,12 @@ def jewel_store(J, s):
         else:
             store[s[j]] = 1
 
-
+    # if the jewel_chars in store_chars:
+        # add up the values of the existing chars in stores dict
+    # return int
     for key in store:
         if key in jewel:
             count += store[key]
     return count
-jewel_store("zz","ZZ")
 
-#%%
-
+jewel_store("aazzAA","bAaZAZ")
