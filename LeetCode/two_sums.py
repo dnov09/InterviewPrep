@@ -29,7 +29,7 @@ def two_sums(nums, target):
 two_sums(nums, target)
 
 #%%
-# Faster more optimized solution user dictionary
+# Faster more optimized solution using dictionary
 def two_sums_faster(nums, target):
     keep = dict()
     for i in range(len(nums)):# O(n) runtime

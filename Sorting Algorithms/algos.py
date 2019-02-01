@@ -14,30 +14,29 @@ def selection_sort(lst):
 
 def insertion_sort(lst):
     # Swapping method
-    # for i in range(1, len(lst)):
-    #     for j in range(i-1, -1, -1):
-    #         if lst[j] > lst[j+1]:
-    #             lst[j], lst[j+1] =  lst[j+1], lst[j]
-    #         else:
-    #             break
-
-    # Shifting method -> 2x faster because no swapping
     for i in range(1, len(lst)):
-        curr_num = lst[i]
         for j in range(i-1, -1, -1):
-            if lst[j] > curr_num:
-                lst[j+1] = lst[j]
+            if lst[j] > lst[j+1]:
+                lst[j], lst[j+1] =  lst[j+1], lst[j]
             else:
-                lst[j+1] = curr_num
                 break
+
+    #Shifting method -> 2x faster because no swapping
+    # for i in range(1, len(lst)):
+    #     curr_num = lst[i]
+    #     for j in range(i-1, -1, -1):
+    #         if lst[j] > curr_num:
+    #             lst[j+1] = lst[j]
+    #         else:
+    #             lst[j+1] = curr_num
+    #             break
     
     print("Insertion sort: {}".format(lst))
 
-
-def quicksort(lst):
+def mergesort(lst):
     pass
 
-def mergesort(lst):
+def quicksort(lst):
     pass
 
 def heapsort(lst):
