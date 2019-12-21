@@ -10,16 +10,18 @@ def romanToInt(s):
         'M': 1000
     }
 
-    result = 0
-    roman_list = [x for x in s]
-    for k, v in roman_dict.items():
-        for i in range(len(roman_list)):
-            if roman_list[i] == k:
-                result += v
-    # return result
+    # doing it in reverse because it makes more sense
+    s = s[::-1]
+    # we want to keep track of the prev and curr values
+    prev = total = 0
+    for i in range(len(s)):
+        curr = roman_dict[s[i]]
+        if curr < prev:
+            total -= curr
+        else:
+            total += curr
+        prev = curr
+    
+    return total
 
-    # print(result)
-    print(list(enumerate(roman_dict)))
 
-
-romanToInt("XXVII")
