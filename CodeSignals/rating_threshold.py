@@ -25,3 +25,6 @@ The first Pro's rating is 3.5, the second one's is 3.25, and the last one's is 4
 so only the second Pro should be reviewed manually
 (the output is their 0-based index).
 '''
+
+def ratingThreshold(threshold, ratings):
+    pass

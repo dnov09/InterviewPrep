@@ -24,4 +24,21 @@ def romanToInt(s):
     
     return total
 
+'''
+say `romanToInt("IV") -> 4`
 
+going through the for loop
+prev = 0
+total = 0
+***when i = 0:***
+    roman[s[i]] = 5
+    curr = 5
+    runnin_total = 5
+    prev = 5
+						 
+***when i = 1:***
+    romans[s[i]] = 1
+    curr = 1
+    since curr < prev which is 5
+    total = 5 -1 = 4
+'''
