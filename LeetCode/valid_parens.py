@@ -9,6 +9,7 @@ An input string is valid if:
 Note that an empty string is also considered valid.
 '''
 
+
 def isValid(s):
     # the stack will keep track of all our open parens
     stack = []
@@ -36,10 +37,11 @@ def isOpen(char):
         return True
     return False
 
+
 def matches(op, cl):
-    parens = {'{':'}', '[':']', '(':')'}
+    parens = {'{': '}', '[': ']', '(': ')'}
     # check if the open paren matches the close paren
-    for k,v in parens.items():
+    for k, v in parens.items():
         # if they do return True
         if op == k and cl == v:
             return True
@@ -47,4 +49,9 @@ def matches(op, cl):
     return False
 
 
-print(isValid("()[]{}"))
+print("First test: ", isValid("([{({})}])"))
+print("Second test: ", isValid("()[]"))
+print("Third test: ", isValid("()[]{"))
+print("Fourth test: ", isValid("()[]"))
+print("Fifth test: ", isValid("]"))
+
