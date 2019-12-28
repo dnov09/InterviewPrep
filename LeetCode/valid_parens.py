@@ -45,7 +45,6 @@ def matches(op, cl):
         # if they do return True
         if op == k and cl == v:
             return True
-    # return false
     return False
 
 

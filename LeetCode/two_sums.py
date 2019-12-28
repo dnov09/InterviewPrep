@@ -1,3 +1,4 @@
+import timeit
 '''
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
@@ -26,7 +27,7 @@ def two_sums(nums, target):
     return lst
 
 
-two_sums(nums, target)
+print(two_sums(nums, target))
 
 #%%
 # Faster more optimized solution using dictionary
@@ -38,5 +39,4 @@ def two_sums_faster(nums, target):
         else:
             keep[target - nums[i]] = i  # O(1)
 
-
-two_sums_faster(nums, target)
+# two_sums_faster(nums, target)

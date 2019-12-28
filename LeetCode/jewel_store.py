@@ -47,4 +47,4 @@ def jewel_store(J, s):
             count += store[key]
     return count
 
-jewel_store("aazzAA","bAaZAZ")
+print(jewel_store("aazzAA","bAaZAZ"))
