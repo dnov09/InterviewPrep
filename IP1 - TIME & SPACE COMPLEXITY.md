@@ -53,20 +53,20 @@ def constant_example():
         return (x + y) #O(1)
     ```
 
+  - ```python
+    array = [1,2,3,4,5,...,10]
     
+    def linear_example(array):
+        total = 0
+        for i in range(len(array)): # O(1)
+            total += array[i] # O(1)
+    return (total)
+    ```
 
 - Logarithmic time (O(Log N)) - 
 
 - Linear time (O(n)) - As the size of the input increases, the time it takes to run the algorithm increases
 
-  - ```python
-    array = [1,2,3,4,5,...,100]
-    
-    def linear_example(array):
-    total = 0
-    for i in range(len(array)): # O(n)
-        total += array[i] # O(1) * O(n) -> O(n)
-return (total)
-    ```
-    
+  
+  
   - 
