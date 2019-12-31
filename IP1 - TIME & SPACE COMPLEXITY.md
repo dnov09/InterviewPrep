@@ -28,7 +28,7 @@ There are 3 measurements we focus on when talking time & space complexities:
   - Say you have the following code
 
     ```python
-    def bigO(n,m):
+    def bigO(n,m): # O(n^2)
         x = 1 #O(1)
         y = 2 #O(1)
         for i in range(0,n): #O(n)
@@ -47,26 +47,26 @@ Order of *time complexities* from fastest to slowest:
 - Constant time(O(1)) - these are operations that do not depend on the input size, N
 
   - ```python
-def constant_example():
+def constant_example(): # O(1)
         x = 5 #O(1)
         y = 5 #O(1)
         return (x + y) #O(1)
     ```
 
-  - ```python
-    array = [1,2,3,4,5,...,10]
     
-    def linear_example(array):
-        total = 0
-        for i in range(len(array)): # O(1)
-            total += array[i] # O(1)
-    return (total)
-    ```
 
 - Logarithmic time (O(Log N)) - 
 
 - Linear time (O(n)) - As the size of the input increases, the time it takes to run the algorithm increases
 
-  
-  
+  - ```python
+    array = [1,2,3,4,5,...,100]
+    
+    def linear_example(array): # O(n)
+        total = 0 # O(1)
+        for i in range(len(array)): # O(n)
+            total += array[i] # O(1) * O(n) -> O(n)
+    return (total) # O(1)
+    ```
+    
   - 
