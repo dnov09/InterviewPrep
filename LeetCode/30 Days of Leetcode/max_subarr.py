@@ -25,6 +25,14 @@ return max_so_far
 '''
 
 def maxSubArray(nums):
-    pass
+    max_sum = max(nums)
+    curr_sum = 0
+    for vals in nums:
+        curr_sum += vals
+        max_sum = max(max_sum, curr_sum)
 
-print(maxSubArray([1,2,3]))
+        if curr_sum < 0:
+            curr_sum = 0
+
+    return max_sum
+print(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
