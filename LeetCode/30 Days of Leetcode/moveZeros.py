@@ -17,7 +17,12 @@ def moveZeros(nums):
     return nums
             
 
+# My thinking would be to use a two-pointer approach somehow
+def moveZeros_inplace(nums):
+    pass
+
 
 nums = [0, 1, 0, 3, 12]
 
 print(moveZeros(nums))
+print(moveZeros_inplace(nums))
