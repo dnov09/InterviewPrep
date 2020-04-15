@@ -22,4 +22,4 @@ def maxSubArray(nums):
             curr_sum = 0
 
     return max_sum
-print(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
+print(maxSubArray([-2, -1,-3]))
