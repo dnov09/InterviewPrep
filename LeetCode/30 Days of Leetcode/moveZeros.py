@@ -8,11 +8,14 @@ Output: [1,3,12,0,0]
 '''
 
 def moveZeros(nums):
-    for vals in nums:
-        if vals == 0:
-            print("Zero Found")
-        else:
-            print(vals)
+    keep_idx = nums[0]
+    for i in range(0, len(nums)):
+        if nums[i] == 0:
+            keep_idx = nums[i]
+            del nums[i]
+            nums.append(keep_idx)
+    return nums
+            
 
 
 nums = [0, 1, 0, 3, 12]
