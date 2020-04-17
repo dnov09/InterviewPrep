@@ -18,6 +18,9 @@ def moveZeros(nums):
             
 
 # My thinking would be to use a two-pointer approach somehow
+    # maybe one pointer for the zeros and another for the non-zeros?
+
+
 def moveZeros_inplace(nums):
     pass
 
