@@ -28,5 +28,17 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 '''
 
 def maxProfit(prices):
+	max_so_far = 0
+	buy = prices[0]
+	curr_profit = 0
 	
-	pass
+	# for i in range(1, len(prices)):
+	# 	if buy > prices[i]:
+	# 		buy = prices[i]
+		
+	
+	return max_so_far
+
+
+print(maxProfit([7, 1, 5, 3, 6, 4]))
+	
