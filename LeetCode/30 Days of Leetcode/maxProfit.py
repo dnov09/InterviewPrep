@@ -29,14 +29,9 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 def maxProfit(prices):
 	max_so_far = 0
-	buy = prices[0]
-	curr_profit = 0
-	
-	# for i in range(1, len(prices)):
-	# 	if buy > prices[i]:
-	# 		buy = prices[i]
-		
-	
+	for i in range(1, len(prices)):
+		if prices[i] > prices[i - 1]:
+			max_so_far += prices[i] - prices[i - 1]
 	return max_so_far
 
 
